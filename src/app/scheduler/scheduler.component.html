@@ -1,0 +1,14 @@
+<div #scheduler_here class='dhx_cal_container' style='width:100%; height:100vh'>
+	<div class='dhx_cal_navline'>
+		<div style='font-size:16px;padding:4px 20px;'>
+			Show rooms:
+			<select id='room_filter' [(ngModel)]='selectedRoomType' (ngModelChange)='filterRoomsByType($event)'></select>
+		</div>
+		<div class='dhx_cal_prev_button'>&nbsp;</div>
+		<div class='dhx_cal_next_button'>&nbsp;</div>
+		<div class='dhx_cal_today_button'></div>
+		<div class='dhx_cal_date'></div>
+	</div>
+	<div class='dhx_cal_header'></div>
+	<div class='dhx_cal_data'></div>
+</div>
